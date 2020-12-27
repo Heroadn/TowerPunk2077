@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class moviment : MonoBehaviour
+public class Moviment3D : MonoBehaviour
 {
     private CharacterController controller;
     private Vector3 playerVelocity;
