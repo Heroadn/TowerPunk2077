@@ -763,11 +763,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e4985de32bd3f145a35e90d3e81f0c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventoryEnabled: 0
   inventoryGui: {fileID: 1059029934}
-  allSlots: 0
-  enabledSlots: 0
-  slot: []
   slotHolder: {fileID: 1203130147}
 --- !u!1 &1032442010
 GameObject:
@@ -1582,7 +1578,7 @@ GameObject:
   - component: {fileID: 1485244488}
   - component: {fileID: 1485244487}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: GUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
