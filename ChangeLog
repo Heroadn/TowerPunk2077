@@ -27,3 +27,29 @@ Seg Dec 28 11:10:16 2020    <benbejamin554@gmail.com>
 
     *Exemplo_Inventory_Item: eu com mais detalhes explico
     item de inventario e tal
+    
+Seg Dec 28 12:10:30 2020    <benbejamin554@gmail.com>
+
+    *Inventory/InventoryItem.cs: um item de inventario generico
+    que o torna toda classe que o extenda como adicionavel ao 
+    inventario sem ter que adicionar um metodo, claro voce pode
+    dar override nos metodos dele.
+    
+    *Inventory/Inventory.cs: fiz alguns ajustes nele adicionando
+    metodo de peguar por index
+    
+    *Item/*.cs: foram removidos os exemplos e simplficiado classes, 
+    e alguns foram adicionados a pasta inventario
+    
+    * TODO: criar classe de item, entretanto a definição de um item em sí 
+    precisa ser elaborada. ex(todos os items podem estar no inventario).
+    
+    * TODO: adicionar metodo de remover
+    
+    * TODO: adicionar metodo de procurar
+    
+    * TODO: adicionar metodo de verificar se existe na lista
+    
+    
+    
+    

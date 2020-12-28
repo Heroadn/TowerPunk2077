@@ -23,4 +23,15 @@ public class Inventory
     {
         //TODO: função de remover item do inventario
     }
+
+    public IInventoryItem peguar(int index)
+    {
+        return inv[index];
+    }
+
+    public IInventoryItem procurar(IInventoryItem item)
+    {
+        //TODO: função de procurar item no inventario
+        return null;
+    }
 }

@@ -5,9 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Armadilha_Urso : IInventoryItem
+public class Armadilha_Urso : InventoryItem
 {   
-    public bool colocar(){
-        return true;
-    }
+    
 }
