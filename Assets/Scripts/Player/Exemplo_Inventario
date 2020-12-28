@@ -17,4 +17,7 @@ public class Exemplo_obj_inventario : IInventory
     int contar(){
 
     }
+
+    /*se quiser adicionar um metodo, garanta ter adicionado em IInventario,
+    so são chamados metodos presentes em IInventario pelo sistema*/
 }
