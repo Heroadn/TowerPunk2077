@@ -14,7 +14,7 @@
 public class Exemplo_obj_inventario : IInventory
 {   
     /*Toda classe deve ter esse metodo a interface o obriga */
-    int contar(){
+    boolean colocar(){
 
     }
 

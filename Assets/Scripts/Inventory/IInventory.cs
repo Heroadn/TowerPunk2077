@@ -7,5 +7,5 @@
 
 public interface IInventory
 {
-    int contar();
+    boolean colocar();
 }

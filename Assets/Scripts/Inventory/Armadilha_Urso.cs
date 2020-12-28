@@ -5,7 +5,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Wood : IInventory
+public class Armadilha_Urso : IInventory
 {   
     public boolean colocar(){
         return true;
