@@ -1,0 +1,20 @@
+/*
+    Author: Benjamin de Castro "Hellkaiser"
+
+    Classe responsavel por implementar um IInventario,
+    out Interface Inventario.
+
+    a interface define os metodos que a classe, mas esta classe ou qualquer 
+    outra que use a interface define os metodos.
+    Como eu falar desenhe um linha e um circulo, mas voce 
+    desenha da maneira que quiser, mas deve desenhar-los.
+*/
+
+/*deve implementar todos os metodos da interface*/
+public class Exemplo_obj_inventario : IInventory
+{   
+    /*Toda classe deve ter esse metodo a interface o obriga */
+    int contar(){
+
+    }
+}
