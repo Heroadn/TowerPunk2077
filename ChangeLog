@@ -38,8 +38,8 @@ Seg Dec 28 12:10:30 2020    <benbenjamin554@gmail.com>
     *Inventory/Inventory.cs: fiz alguns ajustes nele adicionando
     metodo de peguar por index
     
-    *Item/*.cs: foram removidos os exemplos e simplficiado classes, 
-    e alguns foram adicionados a pasta inventario
+    *Item/*.cs: foram removidos os exemplos e simplficado classes, 
+    e alguns foram movidos a pasta inventario
     
     * TODO: criar classe de item, entretanto a definição de um item em sí 
     precisa ser elaborada. ex(todos os items podem estar no inventario).
