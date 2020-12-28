@@ -1,9 +1,9 @@
 
 * TODO: veja abaixo, em "TODO" file. Aproveite XD!
 
-Seg Dec 28 09:10:16 2020    <benbejamin554@gmail.com>
+Seg Dec 28 09:10:16 2020    <benbenjamin554@gmail.com>
 
-	* Foram modificados a classe personagem e
+    * Foram modificados a classe personagem e
     particionado um pouco deixando mais flexivel.
 
     * Movement.cs: ele implementa tudo relacionado a 
@@ -15,9 +15,9 @@ Seg Dec 28 09:10:16 2020    <benbejamin554@gmail.com>
     necessario pois ficar colocando codigo aqui e na 
     esquina de adicionar ou remover nao fica legal XD
 
-Seg Dec 28 11:10:16 2020    <benbejamin554@gmail.com>
+Seg Dec 28 11:10:16 2020    <benbenjamin554@gmail.com>
 
-	* Ja foi defindo a interface de items de inventario,
+    * Ja foi defindo a interface de items de inventario,
     tambem separei o inventario em si de seus item em pastas
     separadas
 
@@ -28,7 +28,7 @@ Seg Dec 28 11:10:16 2020    <benbejamin554@gmail.com>
     *Exemplo_Inventory_Item: eu com mais detalhes explico
     item de inventario e tal
     
-Seg Dec 28 12:10:30 2020    <benbejamin554@gmail.com>
+Seg Dec 28 12:10:30 2020    <benbenjamin554@gmail.com>
 
     *Inventory/InventoryItem.cs: um item de inventario generico
     que o torna toda classe que o extenda como adicionavel ao 
