@@ -7,7 +7,8 @@ using UnityEngine;
 
 public class Wood : IInventory
 {   
-    int contar(){
-        
+    //exemplo
+    public int contar(){
+        return 1;
     }
 }
