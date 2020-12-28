@@ -12,7 +12,11 @@ public class Player : Movement
     //attributes
     public int food;
     public int water;
+    public Inventory inventory;
 
-    //inventory
-    public List<IInventory> inventory;
+    //construtor
+    public Player()
+    {
+        inventory = new Inventory(); 
+    }
 }

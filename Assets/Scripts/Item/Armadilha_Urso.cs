@@ -5,9 +5,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Wood : IInventory
+public class Armadilha_Urso : IInventoryItem
 {   
-    public boolean colocar(){
+    public bool colocar(){
         return true;
     }
 }

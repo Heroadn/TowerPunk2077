@@ -1,0 +1,29 @@
+
+* TODO: veja abaixo, em "TODO" file. Aproveite XD!
+
+Seg Dec 28 09:10:16 2020    <benbejamin554@gmail.com>
+
+	* Foram modificados a classe personagem e
+    particionado um pouco deixando mais flexivel.
+
+    * Movement.cs: ele implementa tudo relacionado a 
+    a movimento do personam, a divisão é necessaria
+    para o 2d e 3d
+
+    *Inventory/Inventory.cs: criei uma classe
+    resṕonsavel por metodos de inventario, é 
+    necessario pois ficar colocando codigo aqui e na 
+    esquina de adicionar ou remover nao fica legal XD
+
+Seg Dec 28 11:10:16 2020    <benbejamin554@gmail.com>
+
+	* Ja foi defindo a interface de items de inventario,
+    tambem separei o inventario em si de seus item em pastas
+    separadas
+
+    * Item/IInventoryItem.cs: a interface que define os metodos
+    que todo item de inventario deve ter. eu pretendo modificar
+    os nome e separar mais por falta de tempo é isso
+
+    *Exemplo_Inventory_Item: eu com mais detalhes explico
+    item de inventario e tal

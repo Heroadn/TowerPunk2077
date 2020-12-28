@@ -5,7 +5,7 @@
     metodos de um objeto de inventario
 */
 
-public interface IInventory
+public interface IInventoryItem
 {
-    boolean colocar();
+    bool colocar();
 }

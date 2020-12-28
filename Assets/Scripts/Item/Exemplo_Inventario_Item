@@ -11,7 +11,7 @@
 */
 
 /*deve implementar todos os metodos da interface*/
-public class Exemplo_obj_inventario : IInventory
+public class Exemplo_Inventory_Item : IInventoryItem
 {   
     /*Toda classe deve ter esse metodo a interface o obriga */
     boolean colocar(){
