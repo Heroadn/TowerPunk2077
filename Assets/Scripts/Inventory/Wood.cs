@@ -8,6 +8,6 @@ using UnityEngine;
 public class Wood : IInventory
 {   
     int contar(){
-
+        
     }
 }
