@@ -50,6 +50,15 @@ Seg Dec 28 12:10:30 2020    <benbenjamin554@gmail.com>
     
     * TODO: adicionar metodo de verificar se existe na lista
     
-    
+
+Seg Dec 28 16:09:12 2020    <ignaciopunto102@outlook.com>
+
+    * Adicionei o sistema de Inventario graico, só é nessesario
+    conectar com a logica, mais todo o escopo e as molduras dos
+    items já estao no projeto
+
+    *Sprites provisorios adicionados na GUI do jogo
+
+    *Codigo de abertura do inventario é o input.getKey("I")
     
     
