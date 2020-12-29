@@ -36,7 +36,7 @@ public class PlayerInventory : MonoBehaviour{
         if(Input.GetKeyDown(KeyCode.I)){
             
             for(int i = 0; i < inventoryComponent.getInventorySize(); i++)
-                Debug.Log("Hello"+inventoryComponent.getItem(i));
+                Debug.Log("Hello"+inventoryComponent.getItem(i)+slots[i].gameObject);
 
             inventoryGui.SetActive(inventoryEnabled = !inventoryEnabled);
         }

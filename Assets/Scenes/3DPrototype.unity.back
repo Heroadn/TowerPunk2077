@@ -208,6 +208,7 @@ Transform:
 --- !u!1001 &1054961713975503129
 PrefabInstance:
   m_ObjectHideFlags: 0
+<<<<<<< HEAD
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -839,6 +840,7 @@ CanvasRenderer:
   m_GameObject: {fileID: 1378610153}
   m_CullTransparentMesh: 0
 --- !u!1001 &1403012343
+=======
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
@@ -914,6 +916,7 @@ CanvasRenderer:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3a5be4a7e1cbcad43aab6086f8fe9649, type: 3}
 --- !u!1001 &3723104870772002498
+>>>>>>> c044fca4161913a295a292e2958bdf6afad3d559
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
