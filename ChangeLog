@@ -60,5 +60,18 @@ Seg Dec 28 16:09:12 2020    <ignaciopunto102@outlook.com>
     *Sprites provisorios adicionados na GUI do jogo
 
     *Codigo de abertura do inventario é o input.getKey("I")
+
+Ter Dec 29 02:49:33 2020    <ignaciopunto102@outlook.com>
+
+    * Depois de algums testes, o Scene 2DPrototype esta funcionando
+    algumas modificações de organização foram adicionadas
+
+    * Sprite Editor adicionado
+
+    * Novas texturas
+
+    * Sistema de Caminhada + Sprint
+
+    * Sistema de orientação de animação pendente
     
     
