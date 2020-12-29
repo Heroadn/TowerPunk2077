@@ -11,7 +11,7 @@ public class Icons : MonoBehaviour
     public enum Icon { WOOD, TRAP };
 
     public static Sprite[] sprites = { 
-         Resources.Load<Sprite>("Assets/Textures/images"),//WOOD
-         Resources.Load<Sprite>("Assets/Textures/images")//TRAP
+         Resources.Load<Sprite>("images"),//WOOD images
+         Resources.Load<Sprite>("placeholder")//TRAP
         };
 }

@@ -94,3 +94,9 @@ Ter Dec 29 11:32:12 2020    <benbenjamin554@gmail.com>
     *TODO: adicionar componente de inventario a usuario, ao inves
     de no PlayerInventory    
     
+Ter Dec 29 12:32:12 2020    <benbenjamin554@gmail.com>
+
+    *PlayerInventory.cs: adicionado sistema de inventario a gui,
+    entretanto é necessario mais testes.
+
+    *TODO: adicionar sistema de clique em itens no inventario

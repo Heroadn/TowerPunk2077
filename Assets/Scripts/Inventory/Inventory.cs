@@ -33,6 +33,22 @@ public class Inventory
         return true;
     }
 
+    public bool add(params InventoryItem[] item)
+    {
+        if(inv.Count > max_size)
+            return false;
+
+        for(int i = 0; i < item.Length; i++)
+        {
+            if(inv.Count < max_size)
+                inv.Add(item[i]);
+            else 
+                return false;
+        }
+
+        return true;
+    }
+
     public void delete(InventoryItem item)
     {
         //TODO: função de remover item do inventario

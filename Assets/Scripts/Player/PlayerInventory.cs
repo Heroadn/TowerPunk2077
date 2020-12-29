@@ -18,7 +18,7 @@ public class PlayerInventory : MonoBehaviour{
     void Start(){
         //obtendo componente de inventario
         inventoryComponent = GetComponent<InventoryComponent>();
-        inventoryComponent.getInventory().add(new Wood());
+        inventoryComponent.getInventory().add(new Wood(), new ArmadilhaUrso());
 
         //tamanho de slots e inicializando array
         size_slots = inventoryComponent.getInventorySize();
@@ -30,16 +30,23 @@ public class PlayerInventory : MonoBehaviour{
         //Inicializando slots vazios
         for (int i=0; i < size_slots; i++)
             slots[i] = slotHolder.transform.GetChild(i).gameObject;
+
+        //Preenchendo array de icones
+        int code = (inventoryComponent.getItem(0) != null)?
+                        inventoryComponent.getItem(0).icon_id : 0;
+        for(int i = 0;  
+            i < size_slots && 
+            i < inventoryComponent.getInventorySize();
+            i++,
+            code = inventoryComponent.getItem(i).icon_id)
+        {
+            Debug.Log("code: "+code);
+            slots[i].GetComponent<Image>().sprite = Icons.sprites[code];
+        }
     }
 
     void Update(){
         if(Input.GetKeyDown(KeyCode.I)){
-            
-            for(int i = 1; i < inventoryComponent.getInventorySize(); i++)
-            {
-                slots[0].GetComponent<Image>().sprite = Resources.Load<Sprite>("images");
-            }
-
             inventoryGui.SetActive(inventoryEnabled = !inventoryEnabled);
         }
     }
