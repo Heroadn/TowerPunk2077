@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class Moviment : MonoBehaviour
 {
-    public int speed;
-    public int maxSpeed;
     public int minSpeed;
+    public int maxSpeed;
+    public int speed;
     public Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {   
         anim = anim.GetComponent<Animator>();
-        minSpeed = speed;
+        speed = minSpeed;
     }
 
     // Update is called once per frame
@@ -21,12 +21,12 @@ public class Moviment : MonoBehaviour
 
         //vertical moviment :D
 		if(Input.GetKey ("w")){
-			transform.Translate(0, 0, (minSpeed * Time.deltaTime));
+			transform.Translate(0, 0, (speed * Time.deltaTime));
              anim.SetInteger("vertical", 1);
              anim.SetInteger("horizontal", 0);
 
 		}else if(Input.GetKey ("s")){
-			transform.Translate(0, 0, (-minSpeed * Time.deltaTime));
+			transform.Translate(0, 0, (-speed * Time.deltaTime));
             anim.SetInteger("vertical", -1);
             anim.SetInteger("horizontal", 0);
 
@@ -34,25 +34,29 @@ public class Moviment : MonoBehaviour
 
         //horizontal moviment XD
 		if(Input.GetKey ("a")){
-			transform.Translate((-minSpeed * Time.deltaTime), 0, 0);
+			transform.Translate((-speed * Time.deltaTime), 0, 0);
             anim.SetInteger("horizontal", -1);
             anim.SetInteger("vertical", 0);
 
 		}else if(Input.GetKey ("d")){
-			transform.Translate((minSpeed * Time.deltaTime), 0, 0);
+			transform.Translate((speed * Time.deltaTime), 0, 0);
             anim.SetInteger("horizontal", 1);
             anim.SetInteger("vertical", 0);
 
-		}
+		}else{
+            anim.SetInteger("vertical", 0);
+            anim.SetInteger("horizontal", 0);
+        }
 
         //sistema de sprint
-        if ( Input.GetKey(KeyCode.LeftShift) && minSpeed <= maxSpeed ){
-			minSpeed += 1;
+        if ( Input.GetKey(KeyCode.LeftShift) && speed <= maxSpeed ){
+			speed += 1;
             anim.SetBool("IsSprint", true);
 		}
         if ( Input.GetKeyUp(KeyCode.LeftShift) ) {
-            minSpeed = speed;
+            speed = minSpeed;
             anim.SetBool("IsSprint", false);
         }
     }
+    
 }
