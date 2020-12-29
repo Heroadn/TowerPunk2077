@@ -9,7 +9,7 @@ public class InventoryComponent : MonoBehaviour
 {   
     private Inventory inventory; 
 
-    void Start()
+    public InventoryComponent()
     {
         inventory = new Inventory();
     }

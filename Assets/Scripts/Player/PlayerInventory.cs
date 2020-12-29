@@ -24,7 +24,7 @@ public class PlayerInventory : MonoBehaviour{
         size_slots = inventoryComponent.getInventorySize();
         slots      = new GameObject[size_slots];
 
-        //GUI desativada no inicio
+        //Janela do inventario desativada no inicio
         inventoryGui.SetActive(inventoryEnabled);
 
         //Inicializando slots vazios
@@ -35,16 +35,12 @@ public class PlayerInventory : MonoBehaviour{
     void Update(){
         if(Input.GetKeyDown(KeyCode.I)){
             
-            for(int i = 0; i < inventoryComponent.getInventorySize(); i++)
+            for(int i = 1; i < inventoryComponent.getInventorySize(); i++)
             {
-                slots[0].GetComponent<Image>().sprite = Resources.Load<Sprite>("Textures/Resources/images.png");//Icons.sprites[0];
+                slots[0].GetComponent<Image>().sprite = Resources.Load<Sprite>("images");
             }
 
             inventoryGui.SetActive(inventoryEnabled = !inventoryEnabled);
         }
-    }
-
-    void OnGUI(){
-        slots[1].GetComponent<Image>().sprite = Resources.Load<Sprite>("images");//Icons.sprites[0];
     }
 }
