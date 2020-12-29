@@ -61,7 +61,20 @@ Seg Dec 28 16:09:12 2020    <ignaciopunto102@outlook.com>
 
     *Codigo de abertura do inventario é o input.getKey("I")
 
-Seg Dec 29 11:32:12 2020    <benbenjamin554@gmail.com>
+Ter Dec 29 02:49:33 2020    <ignaciopunto102@outlook.com>
+
+    * Depois de algums testes, o Scene 2DPrototype esta funcionando
+    algumas modificações de organização foram adicionadas
+
+    * Sprite Editor adicionado
+
+    * Novas texturas
+
+    * Sistema de Caminhada + Sprint
+
+    * Sistema de orientação de animação pendente
+
+Ter Dec 29 11:32:12 2020    <benbenjamin554@gmail.com>
 
     *Player.cs: removido atributo inventario, o plano é 
     que ele seja adicionado como componente tendo acesso global
@@ -79,6 +92,5 @@ Seg Dec 29 11:32:12 2020    <benbenjamin554@gmail.com>
     a classe inventario e que possa ser acessada globalmente, mantendo eles separados
 
     *TODO: adicionar componente de inventario a usuario, ao inves
-    de no PlayerInventory
-    
+    de no PlayerInventory    
     
