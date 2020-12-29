@@ -36,7 +36,9 @@ public class PlayerInventory : MonoBehaviour{
         if(Input.GetKeyDown(KeyCode.I)){
             
             for(int i = 0; i < inventoryComponent.getInventorySize(); i++)
-                Debug.Log("Hello"+inventoryComponent.getItem(i)+slots[i].gameObject);
+            {
+                slots[0].GetComponent<Image>().sprite = Resources.Load<Sprite>("Textures/Resources/images.jpg");//Icons.sprites[0];
+            }
 
             inventoryGui.SetActive(inventoryEnabled = !inventoryEnabled);
         }
