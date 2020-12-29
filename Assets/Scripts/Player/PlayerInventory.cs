@@ -38,8 +38,9 @@ public class PlayerInventory : MonoBehaviour{
         for(int i = 0;  
             i < size_slots && 
             i < inventoryComponent.getInventorySize();
-            i++, code = inventoryComponent.getItem(i).icon_id)
+            i++)
         {
+            code = inventoryComponent.getItem(i).icon_id;
             slots[i].GetComponent<Image>().sprite = Icons.sprites[code];
         }
     }
