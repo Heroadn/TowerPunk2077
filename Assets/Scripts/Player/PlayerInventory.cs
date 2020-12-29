@@ -3,17 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
 public class PlayerInventory : MonoBehaviour{
 
     private int size_slots;
     private bool inventoryEnabled;
 
-    public GameObject[] slots;
     public GameObject slotHolder;
     public GameObject inventoryGui;
 
     private InventoryComponent inventoryComponent;
+    private InventoryButton[] slots;
 
     void Start(){
         //obtendo componente de inventario
@@ -22,26 +21,24 @@ public class PlayerInventory : MonoBehaviour{
 
         //tamanho de slots e inicializando array
         size_slots = inventoryComponent.getInventorySize();
-        slots      = new GameObject[size_slots];
+        slots      = new InventoryButton[size_slots];
 
         //Janela do inventario desativada no inicio
         inventoryGui.SetActive(inventoryEnabled);
 
         //Inicializando slots vazios
         for (int i=0; i < size_slots; i++)
-            slots[i] = slotHolder.transform.GetChild(i).gameObject;
-
-        //Preenchendo array de icones
-        int code = (inventoryComponent.getItem(0) != null)?
-                        inventoryComponent.getItem(0).icon_id : 0;
-
-        for(int i = 0;  
-            i < size_slots && 
-            i < inventoryComponent.getInventorySize();
-            i++)
         {
-            code = inventoryComponent.getItem(i).icon_id;
-            slots[i].GetComponent<Image>().sprite = Icons.sprites[code];
+            slots[i] = new InventoryButton();
+            slots[i].button = slotHolder.transform.GetChild(i).gameObject;
+
+            //prenchendo de items e icones
+            if(i < inventoryComponent.getInventorySize())
+            {
+                slots[i].item = inventoryComponent.getItem(i);
+                slots[i].button.GetComponent<Image>().sprite 
+                        = Icons.sprites[slots[i].item.icon_id];
+            }
         }
     }
 

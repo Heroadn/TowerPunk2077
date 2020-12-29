@@ -104,3 +104,11 @@ Ter Dec 29 12:32:12 2020    <benbenjamin554@gmail.com>
 Ter Dec 29 17:11:08 2020    <benbenjamin554@gmail.com>
 
     *PlayerInventory.cs: arrumado bug com objeto nulo
+
+Ter Dec 29 20:35:48 2020    <benbenjamin554@gmail.com>
+
+    *InventoryButton.cs: classe responsavel por linkar
+    botão com item de inventario.
+
+    *PlayerInventory.cs: simplificado função de start e flexiblizando
+    relação de Gameobject(botão) e Classe de InventarioItem.
