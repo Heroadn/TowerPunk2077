@@ -1,39 +1,44 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class PlayerInventory : MonoBehaviour{
 
+    private int size_slots;
     private bool inventoryEnabled;
+
+    public GameObject[] slots;
+    public GameObject slotHolder;
     public GameObject inventoryGui;
 
-    private int allSlots;
-    private int enabledSlots;
-    private GameObject[] slot;
-
-    public GameObject slotHolder;
+    private InventoryComponent inventoryComponent;
 
     void Start(){
-        allSlots = 14;
-        slot = new GameObject[allSlots];
+        //obtendo componente de inventario
+        inventoryComponent = GetComponent<InventoryComponent>();
+        inventoryComponent.getInventory().add(new Wood());
 
-        for (int i=0; i < allSlots; i++){
-            slot[i] = slotHolder.transform.GetChild(i).gameObject;
+        //tamanho de slots e inicializando array
+        size_slots = inventoryComponent.getInventorySize();
+        slots      = new GameObject[size_slots];
 
-        }
+        //GUI desativada no inicio
+        inventoryGui.SetActive(inventoryEnabled);
+
+        //Inicializando slots vazios
+        for (int i=0; i < size_slots; i++)
+            slots[i] = slotHolder.transform.GetChild(i).gameObject;
     }
 
     void Update(){
         if(Input.GetKeyDown(KeyCode.I)){
-            inventoryEnabled = !inventoryEnabled;
-             Debug.Log("Hello");
-        }
-        
-        if(inventoryEnabled == true)
-        {
-            inventoryGui.SetActive(true);
-        } else {
-            inventoryGui.SetActive(false);
+            
+            for(int i = 0; i < inventoryComponent.getInventorySize(); i++)
+                Debug.Log("Hello"+inventoryComponent.getItem(i));
+
+            inventoryGui.SetActive(inventoryEnabled = !inventoryEnabled);
         }
     }
 }

@@ -60,5 +60,25 @@ Seg Dec 28 16:09:12 2020    <ignaciopunto102@outlook.com>
     *Sprites provisorios adicionados na GUI do jogo
 
     *Codigo de abertura do inventario é o input.getKey("I")
+
+Seg Dec 29 11:32:12 2020    <benbenjamin554@gmail.com>
+
+    *Player.cs: removido atributo inventario, o plano é 
+    que ele seja adicionado como componente tendo acesso global
+    e flexiblizando o acesso a ele
+
+    *Inventory.cs: nome das funções foram trocadas para o ingles 
+    por convenção e proximidade com banco de dados(CRUD), tambem 
+    foram adicionados checagem de acesso (out of bounds).
+
+    *PlayerInventory.cs: bug com acesso out of bounds arrumando,
+    classe tambem foi simplificada para receber a classe de
+    inventario
+
+    *InventoryComponent.cs: foi criado um componente para abstrair
+    a classe inventario e que possa ser acessada globalmente, mantendo eles separados
+
+    *TODO: adicionar componente de inventario a usuario, ao inves
+    de no PlayerInventory
     
     

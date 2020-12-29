@@ -751,20 +751,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   food: 0
   water: 0
---- !u!114 &945956770
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 945956763}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e4985de32bd3f145a35e90d3e81f0c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inventoryGui: {fileID: 1059029934}
-  slotHolder: {fileID: 1203130147}
+  inventory: {fileID: 0}
 --- !u!1 &1032442010
 GameObject:
   m_ObjectHideFlags: 0

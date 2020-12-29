@@ -12,11 +12,4 @@ public class Player : Movement
     //attributes
     public int food;
     public int water;
-    public Inventory inventory;
-
-    //construtor
-    public Player()
-    {
-        inventory = new Inventory(); 
-    }
 }
