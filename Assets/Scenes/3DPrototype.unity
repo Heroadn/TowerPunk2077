@@ -565,8 +565,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10911, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: c177e608936d96c1a8fea07d1e3731df, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -763,8 +763,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e4985de32bd3f145a35e90d3e81f0c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventoryGui: {fileID: 1059029934}
+  slots: []
   slotHolder: {fileID: 1203130147}
+  inventoryGui: {fileID: 1059029934}
+--- !u!114 &945956771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945956763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19f74f185eb957e3d86d800f5a011a48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1032442010
 GameObject:
   m_ObjectHideFlags: 0
