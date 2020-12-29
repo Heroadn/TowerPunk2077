@@ -71,4 +71,8 @@ public class Inventory
         //TODO: função de procurar item no inventario
         return null;
     }
+
+    public int size(){
+        return inv.Count;
+    }
 }

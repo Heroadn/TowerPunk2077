@@ -23,7 +23,7 @@ public class InventoryComponent : MonoBehaviour
     }
 
     public int getInventorySize(){
-        return inventory.max_size;
+        return inventory.size();
     }
 
 }

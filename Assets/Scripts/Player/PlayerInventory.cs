@@ -34,13 +34,12 @@ public class PlayerInventory : MonoBehaviour{
         //Preenchendo array de icones
         int code = (inventoryComponent.getItem(0) != null)?
                         inventoryComponent.getItem(0).icon_id : 0;
+
         for(int i = 0;  
             i < size_slots && 
             i < inventoryComponent.getInventorySize();
-            i++,
-            code = inventoryComponent.getItem(i).icon_id)
+            i++, code = inventoryComponent.getItem(i).icon_id)
         {
-            Debug.Log("code: "+code);
             slots[i].GetComponent<Image>().sprite = Icons.sprites[code];
         }
     }
