@@ -115,4 +115,10 @@ Ter Dec 29 20:35:48 2020    <benbenjamin554@gmail.com>
     
 Ter Dec 30 14:53:48 2020    <benbenjamin554@gmail.com>
 
-    *PlayerInventory.cs: 
+    *PlayerInventory.cs: Adicionado teste de add de
+    item ao inventario.
+
+    *Pressione V para adicionar 
+    ao inventario
+
+    *o botão I alem de abrir recarrega o inventario
