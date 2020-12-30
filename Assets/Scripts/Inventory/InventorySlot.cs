@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class InventoryButton : MonoBehaviour{
+public class InventorySlot{
     public InventoryItem item;
     public GameObject button;
 

@@ -112,3 +112,7 @@ Ter Dec 29 20:35:48 2020    <benbenjamin554@gmail.com>
 
     *PlayerInventory.cs: simplificado função de start e flexiblizando
     relação de Gameobject(botão) e Classe de InventarioItem.
+    
+Ter Dec 30 14:53:48 2020    <benbenjamin554@gmail.com>
+
+    *PlayerInventory.cs: 
