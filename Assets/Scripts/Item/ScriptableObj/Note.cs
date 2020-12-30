@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Item", menuName = "Item/Note/Create")]
+[CreateAssetMenu(fileName = "New Item", menuName = "Item/New Note")]
 public class Note : Item
 {
     [Header("Note Attribute")]

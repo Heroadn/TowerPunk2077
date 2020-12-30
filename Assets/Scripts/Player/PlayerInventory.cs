@@ -11,6 +11,8 @@ public class PlayerInventory : MonoBehaviour{
     public GameObject slotHolder;
     public GameObject inventoryGui;
 
+    public Item[] listaDeItems;
+
     private InventoryComponent inventoryComponent;
     private InventorySlot[] slots;
 

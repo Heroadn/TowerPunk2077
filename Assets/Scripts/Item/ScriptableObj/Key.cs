@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Item", menuName = "Item/Key/Create")]
+[CreateAssetMenu(fileName = "New Item", menuName = "Item/New Key")]
 public class Key : Item
 {
     [Header("Key Attribute")]

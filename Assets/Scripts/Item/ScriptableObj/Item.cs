@@ -5,7 +5,7 @@ using UnityEngine;
 public enum ItemType
 {
     Note,
-    Material,
+    Others,
     Key
 }
 public abstract class Item : ScriptableObject

@@ -834,6 +834,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slotHolder: {fileID: 1203130147}
   inventoryGui: {fileID: 1059029934}
+  listaDeItems:
+  - {fileID: 11400000, guid: 9d6ab8b0087e60347aa39a1c9df23014, type: 2}
+  - {fileID: 11400000, guid: ca68f9ac3e83cf04d98eeb940ff10415, type: 2}
 --- !u!114 &945956771
 MonoBehaviour:
   m_ObjectHideFlags: 0
