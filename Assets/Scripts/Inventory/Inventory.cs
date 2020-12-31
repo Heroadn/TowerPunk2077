@@ -13,6 +13,7 @@ public class Inventory : MonoBehaviour
 
     //event
     public event InvHandler OnAddElement;
+    public event InvHandler OnRemoveElement;
     public delegate void InvHandler(Item item, EventArgs e);
 
     public Inventory()
@@ -55,9 +56,10 @@ public class Inventory : MonoBehaviour
     *  delete(Item item): remove um item da lista                     * 
     *                                                                 *
     *******************************************************************/
-    public void delete(Item item)
+    public void delete(int index)
     {
-        //TODO: função de remover item do inventario
+        inv.RemoveAt(index); 
+        OnRemoveElement?.Invoke(item, EventArgs.Empty);
     }
 
     /******************************************************************
