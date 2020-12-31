@@ -834,20 +834,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   max_size: 14
   inv:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 9d6ab8b0087e60347aa39a1c9df23014, type: 2}
+  - {fileID: 11400000, guid: 062807cd324df24468acc15c0eeaec1e, type: 2}
+  - {fileID: 11400000, guid: ca68f9ac3e83cf04d98eeb940ff10415, type: 2}
+  - {fileID: 11400000, guid: 9c8333f641231294ea23010bfcd01519, type: 2}
 --- !u!114 &945956770
 MonoBehaviour:
   m_ObjectHideFlags: 0
