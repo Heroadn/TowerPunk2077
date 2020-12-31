@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b06512060a71f284abaad6ee46095309, type: 3}
+  m_Name: New Item
+  m_EditorClassIdentifier: 
+  Id: 0
+  Name: "Carv\xE3o"
+  type: 1
+  desc: asddsadsadas
+  uiDisplay: {fileID: 7612052949637755811, guid: 8b8c8cc41c966ce4ca5eb7c3e886e700,
+    type: 3}
+  Usefull: marca lugares
