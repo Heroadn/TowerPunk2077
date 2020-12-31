@@ -17,15 +17,8 @@ public class PlayerInventory : MonoBehaviour{
     public GameObject slotHolder;
     public GameObject inventoryGui;
 
-<<<<<<< HEAD
     private Inventory inventory;
     private Slot[] slots;
-=======
-    public Item[] listaDeItems;
-
-    private InventoryComponent inventoryComponent;
-    private InventorySlot[] slots;
->>>>>>> 6c0c0a3bb1c9fd4313287bdd6c81e0a8ab8144e5
 
     void Start(){
         //obtendo componente de inventario
