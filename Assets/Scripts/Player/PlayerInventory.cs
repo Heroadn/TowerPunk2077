@@ -71,14 +71,11 @@ public class PlayerInventory : MonoBehaviour{
     {
         //increvendo em eventos de add no inventario
         inventory.OnAddElement    += new Inventory.InvHandler(onAdd);
-
-        //increvendo em eventos de remover no inventario
-        inventory.OnRemoveElement += new Inventory.InvHandler(onRemove);
     }
 
     /******************************************************************
     *  onAdd(Inventory inventory): caso tenha alguma mudança(add) esta*
-                                   função é chamada                   *
+    *                              função é chamada                   *
     *******************************************************************/
     private void onAdd(Item item, EventArgs e)
     {
@@ -86,14 +83,5 @@ public class PlayerInventory : MonoBehaviour{
         slots[last_index + 1].id_item = item.Id;
         slots[last_index + 1].button.GetComponent<Image>().sprite = item.uiDisplay;
         last_index++;
-    }
-
-    /******************************************************************
-    *  onRemove(Inventory inventory): caso tenha alguma mudança       *
-                                      (remove) esta função é chamada  *
-    *******************************************************************/
-    private void onRemove(Item item, EventArgs e)
-    {
-        Debug.Log("PUT YOUR GLASSES ON NOTHING WILL BE WRONG");
     }
 }
