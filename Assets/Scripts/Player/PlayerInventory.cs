@@ -63,13 +63,14 @@ public class PlayerInventory : MonoBehaviour{
     }
 
     /******************************************************************
-    *  subscribe(Inventory inventory): chame esta função para ser     *
-    *                             notificado de mudanças no inventario*
+    *  subscribe(Inventory inventory): chame esta função  apenas uma  *
+                                       vez para ser notificado  de    *
+    *                                  mudanças no inventario         *
     *******************************************************************/
     public void subscribe(Inventory inventory)
     {
         //increvendo em eventos de add no inventario
-        inventory.OnAddElement    += new Inventory.InvHandler(addToGUI);
+        inventory.OnAddElement += new Inventory.InvHandler(addToGUI);
     }
 
     /******************************************************************
@@ -77,7 +78,6 @@ public class PlayerInventory : MonoBehaviour{
     *******************************************************************/
     public void addToGUI(Item item)
     {
-        
         slots[index].id_item = item.Id;
         slots[index].button.GetComponent<Image>().sprite = item.uiDisplay;
         index++;
