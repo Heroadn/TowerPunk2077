@@ -13,7 +13,7 @@ public struct Slot{
 public class PlayerInventory : MonoBehaviour{
 
     private int size_slots;
-    private int last_index;
+    private int index;
     private bool inventoryEnabled;
 
     public GameObject slotHolder;
@@ -43,9 +43,8 @@ public class PlayerInventory : MonoBehaviour{
         //prenchendo de icones
         for (int i=0; i < inventory.size(); i++)
         {
-            slots[i].id_item = inventory.get(i).Id;
-            slots[i].button.GetComponent<Image>().sprite = inventory.get(i).uiDisplay;
-            last_index = i;
+            addToGUI(inventory.get(i));
+            index = i;
         }
 
         //ouvindo todas as mudanças no inventario
@@ -70,17 +69,17 @@ public class PlayerInventory : MonoBehaviour{
     public void subscribe(Inventory inventory)
     {
         //increvendo em eventos de add no inventario
-        inventory.OnAddElement    += new Inventory.InvHandler(onAdd);
+        inventory.OnAddElement    += new Inventory.InvHandler(addToGUI);
     }
 
     /******************************************************************
-    *  onAdd(Inventory inventory): adiciona itens ao inventario       *
+    *  addToGUI(Inventory inventory): adiciona itens a GUI            *
     *******************************************************************/
-    private void onAdd(Item item)
+    public void addToGUI(Item item)
     {
         
-        slots[last_index + 1].id_item = item.Id;
-        slots[last_index + 1].button.GetComponent<Image>().sprite = item.uiDisplay;
-        last_index++;
+        slots[index].id_item = item.Id;
+        slots[index].button.GetComponent<Image>().sprite = item.uiDisplay;
+        index++;
     }
 }
