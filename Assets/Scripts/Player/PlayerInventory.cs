@@ -64,8 +64,8 @@ public class PlayerInventory : MonoBehaviour{
     }
 
     /******************************************************************
-    *  subscribe(Inventory inventory): qualquer mudança no inventario *
-    *                                  faz ela ser chamada            *
+    *  subscribe(Inventory inventory): chame esta função para ser     *
+    *                             notificado de mudanças no inventario*
     *******************************************************************/
     public void subscribe(Inventory inventory)
     {
@@ -73,8 +73,8 @@ public class PlayerInventory : MonoBehaviour{
     }
 
     /******************************************************************
-    *  doAction(Inventory inventory): subscribe chama esta função caso*
-    *                                tenha uma alteração no inventario*
+    *  doAction(Inventory inventory): caso tenha alguma mudança esta  *
+                                      função é chamada                *
     *******************************************************************/
     private void doAction(Item item, EventArgs e)
     {
