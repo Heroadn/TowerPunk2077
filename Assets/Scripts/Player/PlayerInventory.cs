@@ -45,7 +45,7 @@ public class PlayerInventory : MonoBehaviour{
         for (int i=0; i < inventory.size(); i++)
         {
             slots[i].gameObject.GetComponent<Image>().sprite = inventory.get(i).uiDisplay;
-            slots[i].id_item;
+            slots[i].id_item = inventory.get(i).Id;
         }
     }
 

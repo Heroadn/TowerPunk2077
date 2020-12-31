@@ -3,6 +3,7 @@
 */
 using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class Inventory : MonoBehaviour
@@ -14,6 +15,8 @@ public class Inventory : MonoBehaviour
     {
         inv = new List<Item>(max_size); 
     }
+
+    //public event Action<Item> OnAddElement = delegate { };
 
     /******************************************************************
     *                                                                 *
@@ -27,6 +30,7 @@ public class Inventory : MonoBehaviour
             return false;
 
         inv.Add(item);
+        //OnAddElement?.Invoke(item);
         return true;
     }
 
