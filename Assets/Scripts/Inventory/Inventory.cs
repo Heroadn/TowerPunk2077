@@ -13,8 +13,7 @@ public class Inventory : MonoBehaviour
 
     //event
     public event InvHandler OnAddElement;
-    public event InvHandler OnRemoveElement;
-    public delegate void InvHandler(Item item, EventArgs e);
+    public delegate void InvHandler(Item item);
 
     public Inventory()
     {
@@ -33,7 +32,7 @@ public class Inventory : MonoBehaviour
             return false;
 
         inv.Add(item);
-        OnAddElement?.Invoke(item, EventArgs.Empty);
+        OnAddElement?.Invoke(item);
         return true;
     }
 
@@ -59,7 +58,6 @@ public class Inventory : MonoBehaviour
     public void delete(int index)
     {
         inv.RemoveAt(index); 
-        OnRemoveElement?.Invoke(item, EventArgs.Empty);
     }
 
     /******************************************************************

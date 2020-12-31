@@ -74,10 +74,9 @@ public class PlayerInventory : MonoBehaviour{
     }
 
     /******************************************************************
-    *  onAdd(Inventory inventory): caso tenha alguma mudança(add) esta*
-    *                              função é chamada                   *
+    *  onAdd(Inventory inventory): adiciona itens ao inventario       *
     *******************************************************************/
-    private void onAdd(Item item, EventArgs e)
+    private void onAdd(Item item)
     {
         
         slots[last_index + 1].id_item = item.Id;
