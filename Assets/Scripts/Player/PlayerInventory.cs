@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 /*relaciona icone com o item*/
 public struct Slot{
-    public Item item;
+    public int id_item;
     public GameObject button;
 }
 
@@ -16,36 +16,36 @@ public class PlayerInventory : MonoBehaviour{
 
     public GameObject slotHolder;
     public GameObject inventoryGui;
-    
+
     private Inventory inventory;
     private Slot[] slots;
 
-    /*relaciona id do item com icone*/
-    struct Slot
-    {
-        public int id_item;
-        public GameObject gameObject;
-    }    
-
     void Start(){
-        //obtendo inventario
+        //obtendo componente de inventario
         inventory = GetComponent<Inventory>();
-        slots = new Slot[14];
+        //inventoryComponent.getInventory().add(new Wood(), new Wood(), new ArmadilhaUrso());
+
+        //tamanho de slots e inicializando array
+        size_slots = 14;
+        slots      = new Slot[size_slots];
 
         //Janela do inventario desativada no inicio
         inventoryGui.SetActive(inventoryEnabled);
 
-        //Criando slots
+        //Inicializando slots vazios
         for (int i=0; i < size_slots; i++)
         {
-            slots[i].gameObject = slotHolder.transform.GetChild(i).gameObject;
+            slots[i] = new  Slot();
+            slots[i].button = slotHolder.transform.GetChild(i).gameObject;
+
+            
         }
 
-        //Adicionando icones
+        //prenchendo de icones
         for (int i=0; i < inventory.size(); i++)
         {
-            slots[i].gameObject.GetComponent<Image>().sprite = inventory.get(i).uiDisplay;
             slots[i].id_item = inventory.get(i).Id;
+            slots[i].button.GetComponent<Image>().sprite = inventory.get(i).uiDisplay;
         }
     }
 
