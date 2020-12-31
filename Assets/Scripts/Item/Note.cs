@@ -7,7 +7,7 @@ public class Note : Item
 {
     [Header("Note Attribute")]
 
-        [TextArea(10, 20)]
+    [TextArea(10, 20)]
     public string info;
 
     public Sprite background;

@@ -122,3 +122,13 @@ Ter Dec 30 14:53:48 2020    <benbenjamin554@gmail.com>
     ao inventario
 
     *o botão I alem de abrir recarrega o inventario
+
+Ter Dec 30 20:47:14 2020    <benbenjamin554@gmail.com>
+
+    *Invetory.cs: classe simplificada
+
+    *InvetoryComponent.cs: removida
+
+    *InvetoryButton.cs: substituida por um struc em PlayerInventory
+
+    *Items: foram de sua pasta, para direto a de items

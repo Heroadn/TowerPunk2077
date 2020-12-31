@@ -1,30 +1,27 @@
 /*
-    Author: Benjamin de Castro "Hellkaiser"
+    Author: Ignacio
 */
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Inventory
+public class Inventory : MonoBehaviour
 {   
-    public List<InventoryItem> inv; 
     public int max_size = 14; 
+    public List<Item> inv; 
 
     public Inventory()
     {
-        inv = new List<InventoryItem>(); 
+        inv = new List<Item>(max_size); 
     }
 
-    public Inventory(List<InventoryItem> inventory)
-    {
-        inv = inventory;
-    }
-
-    /*
-        Adicionar(IInventoryItem item): Caso a função retorne false
-        significa que o inventario esta cheio
-    */
-    public bool add(InventoryItem item)
+    /******************************************************************
+    *                                                                 *
+    *  add(Item item): adiciona um item ao array,                     *
+    *                  retorna false caso inventario esteja cheio     *
+    *                                                                 *
+    *******************************************************************/
+    public bool add(Item item)
     {
         if(inv.Count > max_size)
             return false;
@@ -33,28 +30,36 @@ public class Inventory
         return true;
     }
 
-    public bool add(params InventoryItem[] item)
+    /******************************************************************
+    *                                                                 *
+    *  add(params Item[] item): adiciona uma sequencia de items,      * 
+    *                  retorna false caso inventario esteja cheio     *
+    *                                                                 *
+    *******************************************************************/
+    public bool add(params Item[] item)
     {
-        if(inv.Count > max_size)
-            return false;
-
         for(int i = 0; i < item.Length; i++)
-        {
-            if(inv.Count < max_size)
-                inv.Add(item[i]);
-            else 
-                return false;
-        }
+            add(item);
 
         return true;
     }
 
-    public void delete(InventoryItem item)
+    /******************************************************************
+    *                                                                 *
+    *  delete(Item item): remove um item da lista                     * 
+    *                                                                 *
+    *******************************************************************/
+    public void delete(Item item)
     {
         //TODO: função de remover item do inventario
     }
 
-    public InventoryItem get(int index)
+    /******************************************************************
+    *                                                                 *
+    *  get(int index): retorna um item da lista                       * 
+    *                                                                 *
+    *******************************************************************/
+    public Item get(int index)
     {
         if(index > max_size || index >= inv.Count)
             return null;
@@ -62,17 +67,24 @@ public class Inventory
             return inv[index];
     }
 
-    public List<InventoryItem> getAll(){
+    /******************************************************************
+    *                                                                 *
+    *  getAll(): retorna todos os elementos                           * 
+    *                                                                 *
+    *******************************************************************/
+    public List<Item> getAll()
+    {
         return inv;
     }
 
-    public InventoryItem search(InventoryItem item)
+    /******************************************************************
+    *                                                                 *
+    *  size(): retorna tamanho do inventario                          * 
+    *                                                                 *
+    *******************************************************************/
+    public int size()
     {
-        //TODO: função de procurar item no inventario
-        return null;
-    }
-
-    public int size(){
         return inv.Count;
     }
+
 }
