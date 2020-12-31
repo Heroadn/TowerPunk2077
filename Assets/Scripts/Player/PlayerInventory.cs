@@ -16,38 +16,36 @@ public class PlayerInventory : MonoBehaviour{
 
     public GameObject slotHolder;
     public GameObject inventoryGui;
+    private GameObject[] slots;
 
     private Inventory inventory;
-    private Slot[] slots;
+
+    /*relaciona id do item com icone*/
+    struct Slot
+    {
+        public int id_item;
+        public GameObject gameObject;
+    }    
 
     void Start(){
-        //obtendo componente de inventario
+        //obtendo inventario
         inventory = GetComponent<Inventory>();
-        //inventoryComponent.getInventory().add(new Wood(), new Wood(), new ArmadilhaUrso());
-
-        //tamanho de slots e inicializando array
-        size_slots = 14;
-        slots      = new Slot[size_slots];
+        slots = new Slot[14];
 
         //Janela do inventario desativada no inicio
         inventoryGui.SetActive(inventoryEnabled);
 
-        //Inicializando slots vazios
+        //Criando slots
         for (int i=0; i < size_slots; i++)
         {
-            slots[i] = new  Slot();
-            slots[i].button = slotHolder.transform.GetChild(i).gameObject;
+            slots[i].gameObject = slotHolder.transform.GetChild(i).gameObject;
+        }
 
-            //prenchendo de items e icones
-            if(i < inventory.size())
-            {
-                slots[i].item = inventory.get(i);
-                if(slots[i].item == null)
-                    continue;
-
-                slots[i].button.GetComponent<Image>().sprite 
-                    = Icons.sprites[slots[i].item.Id];
-            }
+        //Adicionando icones
+        for (int i=0; i < inventory.size(); i++)
+        {
+            slots[i].gameObject.GetComponent<Image>().sprite = inventory.get(i).uiDisplay;
+            slots[i].id_item;
         }
     }
 

@@ -132,3 +132,10 @@ Ter Dec 30 20:47:14 2020    <benbenjamin554@gmail.com>
     *InvetoryButton.cs: substituida por um struc em PlayerInventory
 
     *Items: foram de sua pasta, para direto a de items
+
+Ter Dec 31 10:47:14 2020    <benbenjamin554@gmail.com>
+
+    *Icons: removido classe e pasta, com o novo sistema de items,
+    torna-se desnecessario.
+
+    *PlayerInventory.cs: slots[] se tornou apenas um struct de id e gameobject
