@@ -10,6 +10,9 @@ public class CollisionAddItem : MonoBehaviour{
 
     void OnCollisionEnter(Collision collision){
         if(collision.gameObject.tag == PlayerGameobjName)
-        collision.gameObject.GetComponent<Inventory>().add(item);
+        {
+            collision.gameObject.GetComponent<Inventory>().add(item);
+            Destroy(gameObject);
+        }
     }
 }
