@@ -16,9 +16,9 @@ public class PlayerInventory : MonoBehaviour{
 
     public GameObject slotHolder;
     public GameObject inventoryGui;
-    private GameObject[] slots;
-
+    
     private Inventory inventory;
+    private Slot[] slots;
 
     /*relaciona id do item com icone*/
     struct Slot
