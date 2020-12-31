@@ -11,12 +11,14 @@ public class Inventory : MonoBehaviour
     public int max_size = 14; 
     public List<Item> inv; 
 
+    //event
+    public event InvHandler OnAddElement;
+    public delegate void InvHandler(Item item, EventArgs e);
+
     public Inventory()
     {
         inv = new List<Item>(max_size); 
     }
-
-    //public event Action<Item> OnAddElement = delegate { };
 
     /******************************************************************
     *                                                                 *
@@ -30,7 +32,7 @@ public class Inventory : MonoBehaviour
             return false;
 
         inv.Add(item);
-        //OnAddElement?.Invoke(item);
+        OnAddElement?.Invoke(item, EventArgs.Empty);
         return true;
     }
 

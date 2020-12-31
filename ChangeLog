@@ -139,3 +139,11 @@ Ter Dec 31 10:47:14 2020    <benbenjamin554@gmail.com>
     torna-se desnecessario.
 
     *PlayerInventory.cs: slots[] se tornou apenas um struct de id e gameobject
+
+    *PlayerInventory.cs: adicionado sistema de eventos, qualquer classe 
+    que se increva(subscribe) em inventario pode receber atualizações
+    do inventario instataneamente
+
+    *PlayerInventory.cs: documentação de eventos adicionada
+
+    
