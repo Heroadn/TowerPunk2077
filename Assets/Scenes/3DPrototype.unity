@@ -820,6 +820,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   food: 0
   water: 0
+--- !u!114 &945956765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945956763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69471a3bc1c16c959837e6a215e9072d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  max_size: 14
+  inv:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &945956770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -834,21 +862,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slotHolder: {fileID: 1203130147}
   inventoryGui: {fileID: 1059029934}
-  listaDeItems:
-  - {fileID: 11400000, guid: 9d6ab8b0087e60347aa39a1c9df23014, type: 2}
-  - {fileID: 11400000, guid: ca68f9ac3e83cf04d98eeb940ff10415, type: 2}
---- !u!114 &945956771
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 945956763}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19f74f185eb957e3d86d800f5a011a48, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1032442010
 GameObject:
   m_ObjectHideFlags: 0
