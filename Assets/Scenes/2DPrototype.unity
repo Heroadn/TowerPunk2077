@@ -530,6 +530,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Arvore
       objectReference: {fileID: 0}
+    - target: {fileID: 2769843551091801231, guid: 7f640846fd2ffd74cbca2b5be55969a2,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 8207609535349490337, guid: 0d9214097dd0e9b428eb246f1c2c2da2,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f640846fd2ffd74cbca2b5be55969a2, type: 3}
 --- !u!4 &701162744 stripped
@@ -801,8 +807,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.47376835, y: 0.7385473, z: 0.41788673}
-  m_Center: {x: 0.015186906, y: 2.3591447, z: -0.12961197}
+  m_Size: {x: 0.47376835, y: 0.7385473, z: 0.6748705}
+  m_Center: {x: 0.015186906, y: 2.3591447, z: -0.16157198}
 --- !u!4 &1176416150
 Transform:
   m_ObjectHideFlags: 0
