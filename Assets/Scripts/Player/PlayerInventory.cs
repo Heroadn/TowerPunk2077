@@ -73,7 +73,7 @@ public class PlayerInventory : MonoBehaviour{
     }
 
     /******************************************************************
-    *  addToGUI(Inventory inventory): adiciona itens a GUI            *
+    *  addToGUI(Inventory inventory): adiciona itens a GUI(id e img)  *
     *******************************************************************/
     public void addToGUI(Item item)
     {
