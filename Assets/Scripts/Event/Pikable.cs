@@ -6,10 +6,10 @@ using UnityEngine.UI;
 
 public class Pikable : MonoBehaviour{
     public Item item;
-    public string PlayerGameobjName; 
+    public GameObject player;//objeto em que o componente de inventario se encontra
 
     void OnCollisionEnter(Collision collision){
-        if(collision.gameObject.tag == PlayerGameobjName)
+        if(collision.gameObject == player)
         {
             collision.gameObject.GetComponent<Inventory>().add(item);
             Destroy(gameObject);
