@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class CollisionAddItem : MonoBehaviour{
+public class Pikable : MonoBehaviour{
     public Item item;
     public string PlayerGameobjName; 
 

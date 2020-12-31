@@ -156,4 +156,11 @@ Ter Dec 31 18:03:11 2020    <benbenjamin554@gmail.com>
     
     *Toque no bloco com a chave para receber o item
 
+Ter Dec 31 18:03:11 2020    <benbenjamin554@gmail.com>
+
+    *ColissionAddItem.cs: renomeado para Pikable.cs,
+                          ou peguavel
+
+    *Pikable.cs: acredito que pikable seja melhor do
+                 que ColissionAddItem.cs
     
