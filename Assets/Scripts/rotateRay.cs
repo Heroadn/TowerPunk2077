@@ -18,7 +18,8 @@ public class rotateRay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        vecDirection = (player.transform.rotation.y - gameObject.transform.rotation.y);
-        gameObject.transform.Rotate(0, 0, vecDirection);    
+        Vector3 v3 = player.transform.position - transform.position;
+        v3.y -= 12;
+        transform.rotation = Quaternion.LookRotation(v3);
     }
 }
