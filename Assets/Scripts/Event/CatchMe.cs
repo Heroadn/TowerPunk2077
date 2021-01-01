@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Follow : MonoBehaviour
+public class CatchMe : MonoBehaviour
 {
     public GameObject player;
     public int distancia = 10;
