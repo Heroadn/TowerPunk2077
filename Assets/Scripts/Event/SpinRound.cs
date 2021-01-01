@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpinRound : MonoBehaviour
+public class Follow : MonoBehaviour
 {
     public GameObject player;
-    public int distancia;
+    public int distancia = 10;
 
     // Start is called before the first frame update
     void Start()
