@@ -163,4 +163,10 @@ Ter Dec 31 18:03:11 2020    <benbenjamin554@gmail.com>
 
     *Pikable.cs: acredito que pikable seja melhor do
                  que ColissionAddItem.cs
+
+
+Sex Jan 1 10:08:11 2020    <benbenjamin554@gmail.com>
+
+    *Look.cs: classe ray foi renomeada para Look e movida
+              a pasta de eventos
     

@@ -5,8 +5,6 @@ using UnityEngine;
 public class rotateRay : MonoBehaviour
 {
     public GameObject player;
-    float vecDirection = 0;
-    float vecDistance = 0;
 
     // Start is called before the first frame update
     void Start()
