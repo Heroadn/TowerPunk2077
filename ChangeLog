@@ -170,5 +170,8 @@ Sex Jan 1 10:08:11 2020    <benbenjamin554@gmail.com>
     *Look.cs: classe ray foi renomeada para Look e movida
               a pasta de eventos
 
-    *SpinRound.cs: adicionado classe que gira em torno de objeto
+    *CatchMe.cs: devido a algum erro na logica, a classe   
+                 que usar esse script rodara em torno do objeto,
+                 sempre que este chega mais perto ela se distancia e 
+                 gira mais rapido
     
