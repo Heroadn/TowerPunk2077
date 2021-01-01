@@ -717,7 +717,6 @@ GameObject:
   - component: {fileID: 555453338}
   - component: {fileID: 555453337}
   - component: {fileID: 555453336}
-  - component: {fileID: 555453335}
   m_Layer: 0
   m_Name: Plane (1)
   m_TagString: Untagged
@@ -725,18 +724,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &555453335
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 555453334}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c204f174920c8770f86ef287ebe8c191, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!64 &555453336
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2815,7 +2802,6 @@ GameObject:
   - component: {fileID: 2104348004}
   - component: {fileID: 2104348003}
   - component: {fileID: 2104348002}
-  - component: {fileID: 2104348007}
   - component: {fileID: 2104348006}
   m_Layer: 0
   m_Name: Cube (1)
@@ -2912,15 +2898,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   item: {fileID: 11400000, guid: ca68f9ac3e83cf04d98eeb940ff10415, type: 2}
   player: {fileID: 945956763}
---- !u!114 &2104348007
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2104348001}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c204f174920c8770f86ef287ebe8c191, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

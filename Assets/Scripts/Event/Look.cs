@@ -2,15 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class rotateRay : MonoBehaviour
+public class Look : MonoBehaviour
 {
     public GameObject player;
 
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.Find("PlayerHeart");
-        
     }
 
     // Update is called once per frame

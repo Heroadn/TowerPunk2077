@@ -2,23 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Look : MonoBehaviour
+public class Follow : MonoBehaviour
 {
     public GameObject player;
-    float vecDirection = 0;
-    float vecDistance = 0;
+    public int distancia = 10;
 
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.Find("PlayerHeart");
+        //player.transform.x
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector3 v3 = player.transform.position - transform.position;
-        v3.y -= 12;
-        transform.rotation = Quaternion.LookRotation(v3);
+        transform.Translate(player.transform.position.x - distancia,0,0);
     }
 }
