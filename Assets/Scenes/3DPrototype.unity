@@ -645,8 +645,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c204f174920c8770f86ef287ebe8c191, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: ca68f9ac3e83cf04d98eeb940ff10415, type: 2}
-  PlayerGameobjName: Player
 --- !u!64 &555453336
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -1278,8 +1276,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 251, y: 0}
-  m_SizeDelta: {x: -537.4695, y: -40.87216}
+  m_AnchoredPosition: {x: 152.1, y: -9.31}
+  m_SizeDelta: {x: -339.66727, y: -59.49002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1059029936
 MonoBehaviour:
@@ -1547,8 +1545,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -26}
-  m_SizeDelta: {x: -27.9245, y: -101.43933}
+  m_AnchoredPosition: {x: -2.94, y: -22.74}
+  m_SizeDelta: {x: -22.040047, y: -94.92703}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1203130149
 MonoBehaviour:
@@ -2696,5 +2694,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c204f174920c8770f86ef287ebe8c191, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 0}
-  PlayerGameobjName: 
