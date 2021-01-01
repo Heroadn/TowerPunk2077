@@ -5,12 +5,11 @@ using UnityEngine;
 public class CatchMe : MonoBehaviour
 {
     public GameObject player;
-    public int distancia = 10;
+    public int distancia;
 
     // Start is called before the first frame update
     void Start()
     {
-        //player.transform.x
     }
 
     // Update is called once per frame

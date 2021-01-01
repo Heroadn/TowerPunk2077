@@ -174,4 +174,7 @@ Sex Jan 1 10:08:11 2020    <benbenjamin554@gmail.com>
                  que usar esse script rodara em torno do objeto,
                  sempre que este chega mais perto ela se distancia e 
                  gira mais rapido
+
+    *Follow.cs: script que faz objeto seguir player ou qualquer
+                objeto que o seja passado
     
