@@ -15,7 +15,6 @@ public class Look : MonoBehaviour
     void Update()
     {
         Vector3 v3 = player.transform.position - transform.position;
-        v3.y -= 12;
         transform.rotation = Quaternion.LookRotation(v3);
     }
 }
