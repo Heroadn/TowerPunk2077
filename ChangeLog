@@ -177,4 +177,11 @@ Sex Jan 1 10:08:11 2020    <benbenjamin554@gmail.com>
 
     *Follow.cs: script que faz objeto seguir player ou qualquer
                 objeto que o seja passado
+
+Sex Jan 1 15:08:11 2020    <benbenjamin554@gmail.com>
+
+    *Look.cs: bugs com o look foram arrumado,
+                entretando aparentemente ele    
+                muda a angulação com planos, então use
+                um quad e se necessario inverta a scala de z
     

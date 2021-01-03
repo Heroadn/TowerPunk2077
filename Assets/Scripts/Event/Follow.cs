@@ -26,9 +26,16 @@ public class Follow : MonoBehaviour
 
         //a distancia entre os dois > distancia_longe
         if(Math.Abs(transform.position.x - player.transform.position.x) > distancia_longe)
-           step = speed * Time.deltaTime;
+        {
+            step = speed * Time.deltaTime;
+            pos.y = transform.position.y;
+        }
         else
-           step = 0;
+        {
+            step = 0;
+        }
+
+        //executando realocamento
         pos = Vector3.MoveTowards(transform.position, player.transform.position, step);
 
         
