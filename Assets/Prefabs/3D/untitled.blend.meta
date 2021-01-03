@@ -1,8 +1,11 @@
 fileFormatVersion: 2
-guid: afde46d597f9d3f4a9f6f215122c77c0
+guid: 85cb1bea2e9f8a54486de2336d8cad3f
 ModelImporter:
   serializedVersion: 19301
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      74: -623603649343465320
+    second: Scene
   externalObjects: {}
   materials:
     materialImportMode: 1
@@ -61,7 +64,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
   tangentSpace:
-    normalSmoothAngle: 60
+    normalSmoothAngle: 28
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
