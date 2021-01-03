@@ -18,6 +18,8 @@ public class PlayerInventory : MonoBehaviour{
 
     public GameObject slotHolder;
     public GameObject inventoryGui;
+    public GameObject Focus;
+    public GameObject PlayerGUI;
 
     private Inventory inventory;
     private Slot[] slots;
@@ -32,6 +34,8 @@ public class PlayerInventory : MonoBehaviour{
 
         //Janela do inventario desativada no inicio
         inventoryGui.SetActive(inventoryEnabled);
+        Focus.SetActive(false);
+        PlayerGUI.SetActive(true);
 
         //Inicializando slots vazios
         for (int i=0; i < size_slots; i++)
@@ -53,10 +57,21 @@ public class PlayerInventory : MonoBehaviour{
 
     void Update(){
         if(Input.GetKeyDown(KeyCode.I)){
+            if(!Cursor.visible){
+                Cursor.lockState = CursorLockMode.Confined;
+                Cursor.visible = true;
+                Focus.SetActive(true);
+                PlayerGUI.SetActive(false);
+            }else{
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
+                Focus.SetActive(false);
+                PlayerGUI.SetActive(true);
+            }
             inventoryGui.SetActive(inventoryEnabled = !inventoryEnabled);
         }
 
-        //adicionando ao inventario
+        //debug adicionando ao inventario
         if(Input.GetKeyDown(KeyCode.V)){
             inventory.add(inventory.get(0));
         }
