@@ -13,9 +13,7 @@ MonoBehaviour:
   m_Name: Dia1
   m_EditorClassIdentifier: 
   id: 0
-  name: 
-  type: 0
-  scene:
-    m_Handle: 0
+  name: Primeiro dia
+  type: 1
   icone: {fileID: 0}
   info: 

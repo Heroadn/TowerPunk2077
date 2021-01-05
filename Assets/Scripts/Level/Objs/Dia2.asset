@@ -12,10 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abd64dbe83d80be64aa875127a0e0c03, type: 3}
   m_Name: Dia2
   m_EditorClassIdentifier: 
-  id: 0
-  name: 
+  id: 1
+  name: Segundo dia
   type: 1
-  scene:
-    m_Handle: 0
   icone: {fileID: 0}
   info: 
