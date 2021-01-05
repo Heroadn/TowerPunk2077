@@ -186,18 +186,17 @@ Sex Jan 1 15:08:11 2020    <benbenjamin554@gmail.com>
                 um quad e se necessario inverta a scala de z
 
 Ter Jan 5 09:45:11 2020    <benbenjamin554@gmail.com>
-
-    *LevelManager.cs: classe capaz de carregar niveis(nao implementado)
-
     *Level.cs: classe scriptable que define um level
 
-    *LevelDatabase.cs: agrupa todos os levels em uma lista
+    *Database.cs: agrupa todos os levels em uma lista
                        em que podem ser carregados por index.
-                       note que o nome do level é usado para carregamento 
+                       note que o nome do level é usado para carregamento
 
     *Level2D.cs: classe scriptable que define um level 2d
 
     *Level3D.cs: classe scriptable que define um level 3d
+
+    *ChangeScene: classe que muda o level baseado no index passado
 
     *Objs: pasta onde estao scriptables dos niveis
 

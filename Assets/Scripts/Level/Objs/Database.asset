@@ -9,11 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: abd64dbe83d80be64aa875127a0e0c03, type: 3}
-  m_Name: Dia2
+  m_Script: {fileID: 11500000, guid: bc1e86e9e8d339d15a4a0f9336cce3df, type: 3}
+  m_Name: Database
   m_EditorClassIdentifier: 
-  id: 1
-  name: Segundo dia
-  type: 1
-  icone: {fileID: 0}
-  info: 
+  levels:
+  - {fileID: 11400000, guid: b6d3198331703b025a64d0f69d677286, type: 2}
+  - {fileID: 11400000, guid: 6fe418737bc3886e3bf8be20c94f2c71, type: 2}
+  indexOfCurrentLevel: 1

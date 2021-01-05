@@ -9,9 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc1e86e9e8d339d15a4a0f9336cce3df, type: 3}
-  m_Name: Level Database
+  m_Script: {fileID: 11500000, guid: d8e4dd714ec3604b8a2efb0b1c0e0861, type: 3}
+  m_Name: Level2D
   m_EditorClassIdentifier: 
-  levels:
-  - {fileID: 11400000, guid: b6d3198331703b025a64d0f69d677286, type: 2}
-  - {fileID: 11400000, guid: 012de47618bb8f2098508d63277e6c3b, type: 2}
+  id: 1
+  name: 2DPrototype
+  type: 0
+  icone: {fileID: 0}
+  info: 'qualquer coisa
+
+
+    Assets/Scenes/2DPrototype.unity'
