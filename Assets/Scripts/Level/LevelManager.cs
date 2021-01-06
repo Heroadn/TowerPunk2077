@@ -4,8 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-[CreateAssetMenu(fileName = "New Database", menuName = "Level/New Database")]
-public class LevelDatabase : ScriptableObject{
+public class LevelManager : MonoBehaviour{
 
     public List<Level> levels = new List<Level>();
     public int indexOfCurrentLevel = 0;

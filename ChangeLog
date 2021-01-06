@@ -200,4 +200,22 @@ Ter Jan 5 09:45:11 2020    <benbenjamin554@gmail.com>
 
     *Objs: pasta onde estao scriptables dos niveis
 
+Ter Jan 6 10:08:21 2020    <benbenjamin554@gmail.com>
+
+    *GameSystem: é um gameobject que contem componentes globais
+                 um deles é o gerenciado de leveis que contem
+                 uma lista das scenas assim como carrega-las
+
+    *Level.cs: class simplifica para apenas propriedades necessarias,
+               ela define o que um level, descrição, icone e nome 
+               usado para carregamento
+
+    *LevelManager.cs: class define um carregador de levels que mantem
+                      um lista deles. Ela deve ser adicionada ao GameSystem,
+                      sendo assim um componente global
+
+    *Warp.cs: teleport o player(ou qualquer gameobject) a outro gameobject
+
+    *DebugRoom: Sala onde são testadas novas features
+
     

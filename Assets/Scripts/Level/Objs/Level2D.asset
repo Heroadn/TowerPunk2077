@@ -9,14 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d8e4dd714ec3604b8a2efb0b1c0e0861, type: 3}
+  m_Script: {fileID: 11500000, guid: 8e74186cf1344cc22aefba53e8c9f965, type: 3}
   m_Name: Level2D
   m_EditorClassIdentifier: 
-  id: 1
-  name: 2DPrototype
-  type: 0
   icone: {fileID: 0}
-  info: 'qualquer coisa
-
-
-    Assets/Scenes/2DPrototype.unity'
+  desc: 
+  name: 2DPrototype

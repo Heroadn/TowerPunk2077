@@ -4,22 +4,21 @@ using UnityEngine;
 
 public class ChangeScene : MonoBehaviour
 {
-    public LevelDatabase database;
+    private LevelManager manager;
     public GameObject player;
     public int levelIndex;
 
     void OnCollisionEnter(Collision collision){
         if(collision.gameObject == player)
         {
-            database.loadLevel(levelIndex);
+            manager.loadLevel(levelIndex);
         }
             
     }
 
-    // Start is called before the first frame update
     void Start()
     {
-        
+        manager = GameObject.Find("GameSystem").GetComponent<LevelManager>();
     }
 
     // Update is called once per frame
