@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   icone: {fileID: 0}
   desc: 
-  name: 
+  name: DebugRoom
